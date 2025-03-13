@@ -2,6 +2,19 @@ body {
     background: linear-gradient(180deg, rgba(83,84,89,1) 0%, rgba(157,157,159,1) 80% , rgba(141,142,145,1)) 100% fixed;
 }
 
+.view {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18rem;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    z-index: 0;
+}
+
 .box-1u {
     display: flex;
     background-color: #3C8725;
@@ -21,19 +34,12 @@ body {
 }
 
 .box-container {
-    position: absolute;
-    display: grid;
     height: 30rem;
     width: 60rem;
+    display: grid;
     grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 5px;
-}
-
-.screen-centered {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .row1 {
