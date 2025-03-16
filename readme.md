@@ -9,9 +9,11 @@ idk i was bored and a little nostalgic
 - Scrolling from a tab to the other by pressing (shift + arrow keys)
 
 ## Stuff i want to implement
+- Dynamic ui generation
 - All the ui
 - App / folder selection
 - Dummy and games apps
+- Pc app / website shortcuts (to use the site as a launcher)
 - Controller support
 - Settings [ Custom backgrounds, avatars , ... ]
 - Startup animation

@@ -6,22 +6,24 @@ window.addEventListener("keydown", function (event) {
     switch (event.key){
         case "ArrowUp":
             console.log("up")
-            break;
+            document.getElementById("xbox-dialog-container").style.opacity = 1
+            break
         case "ArrowDown":
             console.log("down")
-            break;
+            document.getElementById("xbox-dialog-container").style.opacity = 0
+            break
         case "ArrowLeft":
             console.log("left")
             if(event.shiftKey){
                 focusDisplay("left")
             }
-            break;
+            break
         case "ArrowRight":
             console.log("right")
             if(event.shiftKey){
                 focusDisplay("right")
             }
-            break;
+            break
     }
 })
 
@@ -41,4 +43,8 @@ function focusDisplay(direction){
         return
     }
     document.getElementById(screens[screenPos]).scrollIntoView({ behavior: 'smooth', inline: 'center'})
+    document.querySelectorAll(".active-page").forEach(element => {
+        element.classList.remove("active-page")
+    })
+    document.getElementById("page-" + screens[screenPos]).classList.add("active-page")
 }
