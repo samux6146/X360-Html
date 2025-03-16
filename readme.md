@@ -12,7 +12,7 @@ idk i was bored and a little nostalgic
 - Dynamic ui generation
 - All the ui
 - App / folder selection
-- Dummy and games apps
+- Dummy apps and games
 - Pc app / website shortcuts (to use the site as a launcher)
 - Controller support
 - Settings [ Custom backgrounds, avatars , ... ]
