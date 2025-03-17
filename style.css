@@ -166,15 +166,35 @@ input {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.xbox-dialog-header {
+    display: flex;
+    width: 40%;
+    height: 5%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
 .xbox-dialog {
     display: flex;
-    width: 35rem;
-    height: 40rem;
+    width: 50%;
+    height: 50%;
     background-color: blue;
+}
+
+.xbox-dialog-footer {
+    display: flex;
+    width: 40%;
+    height: 5%;
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: center;
+    color: white;
 }
 
 .pages {
@@ -192,4 +212,52 @@ input {
 
 .active-page {
     color: white;
+}
+
+.a-button::before {
+    display: inline-flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border: #649639;
+    border-radius: 100%;
+    content: "A";
+    background-color: #649639;
+}
+
+.b-button::before {
+    display: inline-flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border: #A13A37;
+    border-radius: 100%;
+    content: "B";
+    background-color: #A13A37;
+}
+
+.x-button::before {
+    display: inline-flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border: #306093;
+    border-radius: 100%;
+    content: "X";
+    background-color: #306093;
+}
+
+.y-button::before {
+    display: inline-flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border: #C78931;
+    border-radius: 100%;
+    content: "Y";
+    background-color: #C78931;
 }
