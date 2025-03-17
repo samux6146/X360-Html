@@ -214,12 +214,22 @@ input {
     color: white;
 }
 
+.home-view-buttons {
+    display: flex;
+    position: fixed;
+    left: 10%;
+    bottom: 8%;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: white;
+}
+
 .a-button::before {
     display: inline-flex;
     height: 1.5rem;
     width: 1.5rem;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     border: #649639;
     border-radius: 100%;
     content: "A";
@@ -231,7 +241,7 @@ input {
     height: 1.5rem;
     width: 1.5rem;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     border: #A13A37;
     border-radius: 100%;
     content: "B";
@@ -243,7 +253,7 @@ input {
     height: 1.5rem;
     width: 1.5rem;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     border: #306093;
     border-radius: 100%;
     content: "X";
@@ -255,7 +265,7 @@ input {
     height: 1.5rem;
     width: 1.5rem;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     border: #C78931;
     border-radius: 100%;
     content: "Y";
